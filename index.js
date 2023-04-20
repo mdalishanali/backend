@@ -6,6 +6,10 @@ const product = require("./product");
 
 app.use("/product", product);
 
+app.get("/cart", (req, res) => {
+  res.send("Hii Welcome to our server");
+});
+
 app.get("/", (req, res) => {
   res.send("Hii Welcome to our server");
 });
